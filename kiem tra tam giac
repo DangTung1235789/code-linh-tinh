@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int a, b, c;
+	cout << " nhap a ";
+	cin >> a;
+	cout << " nhap b ";
+	cin >> b;
+	cout << " nhap c ";
+	cin >> c;
+	if (a + b > c and b + c > a and c + b > a) {
+		if (a * a == b * b + c * c or b * b == a * a + c * c or c * c == a * a + b * b) {
+			cout << "Day la tam giac vuong";
+		}
+		else if (a == b == c) {
+			cout << "Day la tam giac deu";
+		}
+		else if (a == b or a == c or b == c) {
+			cout << "Day la tam giac can";
+		}
+		else if (a * a > b* b + c * c or b * b > a* a + c * c or c * c > a* a + b * b) {
+			cout << "Day la tam giac tu";
+		}
+		else {
+			cout << "Day la tam giac nhon";
+		}
+	}
+	else {
+		cout << "Ba canh a, b, c khong phai la ba canh cua mot tam giac";
+	}
+}
